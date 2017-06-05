@@ -49,13 +49,13 @@ Create a new norcal instance `cal` from:
 To get the command-line tool:
 
 ```
-npm install -g lb
+npm install -g lb_
 ```
 
 To get the library:
 
 ```
-npm install lb
+npm install lb_
 ```
 # version 
 1.0.0

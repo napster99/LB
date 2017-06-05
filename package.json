@@ -1,5 +1,5 @@
 {
-  "name": "lb",
+  "name": "lb_",
   "version": "1.0.0",
   "description": "load balance for nodejs",
   "main": "index.js",
