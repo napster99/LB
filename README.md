@@ -57,7 +57,10 @@ To get the library:
 ```
 npm install lb
 ```
-
+# version 
+1.0.0
 # license
+
+
 
 BSD
