@@ -2,7 +2,7 @@
 # usage
 
 ``` js
-let lb = require('lb')
+let lb = require('lb_')
 let { Server, Client } = lb
 
 
