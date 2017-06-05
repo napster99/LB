@@ -1,6 +1,6 @@
 'use strict'
 
-let Server = require('./')['Server']
+let Server = require('../')['Server']
 let serverInstance = new Server()
 serverInstance.startServer()
 
