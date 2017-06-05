@@ -38,6 +38,11 @@ Create a new norcal instance `cal` from:
 * `host` - server host to connect
 * `port` - server port to use
 
+## let unit = server.getLowerestUnit()
+* back data {'192.168.1.1:6969' : {'cpu' : 42, 'mem':5432232}}
+ 
+## let unit = server.getBestUnit()
+* back data {'192.168.1.1:6969' : {'cpu' : 42, 'mem':5432232}}
 
 # install
 
