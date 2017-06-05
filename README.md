@@ -4,8 +4,6 @@
 ``` js
 let lb = require('lb_')
 let { Server, Client } = lb
-
-
 ```
 
 # api

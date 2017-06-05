@@ -1,6 +1,6 @@
 {
   "name": "lb_",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "load balance for nodejs",
   "main": "index.js",
   "scripts": {

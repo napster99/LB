@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/napster/Documents/backend/LB',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/napster/.npm/lb_/1.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/napster/.npm correctMkdir not in flight; initializing
+10 info lifecycle lb_@1.0.1~prepublish: lb_@1.0.1
+11 silly lifecycle lb_@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/napster/.npm/lb_/1.0.1/package.tgz',
+12 verbose tar pack   '/Users/napster/Documents/backend/LB' ]
+13 verbose tarball /Users/napster/.npm/lb_/1.0.1/package.tgz
+14 verbose folder /Users/napster/Documents/backend/LB
+15 verbose addLocalTarball adding from inside cache /Users/napster/.npm/lb_/1.0.1/package.tgz
+16 verbose correctMkdir /Users/napster/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd lb_@1.0.1
+18 verbose afterAdd /Users/napster/.npm/lb_/1.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/napster/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/napster/.npm/lb_/1.0.1/package/package.json written
+21 silly publish { name: 'lb_',
+21 silly publish   version: '1.0.1',
+21 silly publish   description: 'load balance for nodejs',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository: { type: 'git', url: 'git+https://github.com/napster99/LB.git' },
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/napster99/LB/issues' },
+21 silly publish   homepage: 'https://github.com/napster99/LB#readme',
+21 silly publish   devDependencies: { 'current-processes': '^0.2.1', lodash: '^4.17.4' },
+21 silly publish   readme: '\n# usage\n\n``` js\nlet lb = require(\'lb_\')\nlet { Server, Client } = lb\n```\n\n# api\n\n``` js\nServer\n    startServer\n    getBestUnit\n    getLowerestUnit\n    sendData\n    getData\n\nClient\n    registerClient\n    getInfo\n    initInfo\n    sendData\n    getData\n```\n\n## let client = new Client(host, port)\n\nCreate a new norcal instance `cal` from:\n\n* `host` - server host to connect\n* `port` - server port to use\n\n## let server = new Server(host, port)\n## server.startServer()\n* `host` - server host to connect\n* `port` - server port to use\n\n## let unit = server.getLowerestUnit()\n* back data {\'192.168.1.1:6969\' : {\'cpu\' : 42, \'mem\':5432232}}\n \n## let unit = server.getBestUnit()\n* back data {\'192.168.1.1:6969\' : {\'cpu\' : 42, \'mem\':5432232}}\n\n# install\n\nTo get the command-line tool:\n\n```\nnpm install -g lb_\n```\n\nTo get the library:\n\n```\nnpm install lb_\n```\n# version \n1.0.0   \n\n# license\n\nBSD',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'bb852ce2819eaba6164b8401de8713c4a5511a71',
+21 silly publish   _id: 'lb_@1.0.1',
+21 silly publish   _shasum: 'ebbf06cefd8e51cd49981c9051aff60ca7e22fd3',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name lb_
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'lb_',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'lb_',
+26 silly mapToRegistry   name: 'lb_',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/lb_
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading /Users/napster/.npm/lb_/1.0.1/package.tgz
+30 verbose request uri http://registry.npmjs.org/lb_
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 16:15:59
+33 verbose request using bearer token for auth
+34 verbose request id 1da20510ad0b58f7
+35 http request PUT http://registry.npmjs.org/lb_
+36 http 403 http://registry.npmjs.org/lb_
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 05 Jun 2017 08:15:58 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-nrt6121-NRT',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1496650558.982695,VS0,VE647',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/napster/.npm/registry.npmjs.org/lb_ on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : lb_
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid lb_
+43 verbose cwd /Users/napster/Documents/backend/LB
+44 error Darwin 14.5.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.9.2
+47 error npm  v3.10.9
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.1." : lb_
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
